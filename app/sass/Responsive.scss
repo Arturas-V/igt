@@ -1,0 +1,153 @@
+@media screen and (max-width:768px){
+    .sliderWidgterWrapper {
+        flex-direction: column;
+    }
+    .slider {
+        margin-bottom: 20px;
+    }
+    .slider,
+    .widget {
+        width: 100%;
+    }
+    .widgetItem {
+        margin-bottom: 15px;
+    }
+    .topHeaderLogoImage {
+        width: 160px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .topHeader {
+        background-color: var(--color-blue-dark2);
+        display: block;
+        position: relative;
+        text-align: center;
+        padding: 0 20px;
+    }
+    .topHeaderMenu {
+        display: none;
+    }
+    .mobileMenuToggle {
+        display: block;
+    }
+    .topHeaderLogo {
+        position: relative;
+        display: inline-block;
+        left: 0;
+    }
+    .topHeaderLogoImage {
+        width: 120px;
+    }
+    .featured2 {
+        flex-direction: column;
+    }
+    .slider {
+        height: 200px;
+    }
+    .featured2Wrapper {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .body {
+        background-color: var(--color-blue);
+    }
+    .banner {
+        background-color: transparent;
+    }
+    .bannerMenuWrapper {
+        display: none;
+    }
+    .featuredItem {
+        padding: 35px 20px 20px;
+    }
+    .featured2Item,
+    .featuredItem {
+        background-color: #fff;
+    }
+    .featuredItemButton {
+        width: 100%;
+        padding: 10px 0;
+    }
+    .descriptionContainer {
+        display: none;
+    }
+    .newsletterForm {
+        flex-wrap: wrap;
+    }
+    .newsletterFormTitle {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .newsletterFormInputName {
+        display: none;
+    }
+    .newsletterFormInputEmail {
+        width: 55%;
+    }
+    .newsletterFormSubmit {
+        width: 32%;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width:400px){
+    .container {
+        padding: 0 20px;
+    }
+    .topHeader {
+        margin-bottom: 20px;
+    }
+    .slider {
+        height: 150px;
+    }
+    .newsletterFormInputEmail {
+        width: 54%;
+    }
+    .featured,
+    .featured2Wrapper {
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    .featuredItem,
+    .featured2Item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .featuredLink {
+        margin-bottom: 20px;
+    }
+    .featuredLinkButton {
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .newsletterContainer {
+        padding: 20px 0;
+    }
+    .footerMenu {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .footerMenuItem {
+        width: 33.33333333%;
+        border-bottom: 1px solid #484848;
+        text-align: center;
+        padding: 35px 0;
+        position: relative;
+    }
+    .footerMenuItem:before {
+        content: "\00B7";
+        font-size: 31px;
+        line-height: 14px;
+        position: absolute;
+        left: 0px;
+        top: 36px;
+    }
+    .footerMenuItem:nth-child(1):before,
+    .footerMenuItem:nth-child(4):before {
+        content: "";
+    }
+}

@@ -1,0 +1,212 @@
+.mobileMenu {
+    width: 200px;
+    left: -200px;
+    display: block;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-color: var(--color-blue-dark2);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: opacity .4s,-webkit-transform .4s;
+    transition: opacity .4s,-webkit-transform .4s;
+    transition: transform .4s,opacity .4s;
+    transition: transform .4s,opacity .4s,-webkit-transform .4s;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 0;
+    pointer-events: none;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.siteWrapper {
+    -ms-transition: transform .4s;
+    -webkit-transition: -webkit-transform .4s;
+    transition: transform .4s,-webkit-transform .4s;
+}
+
+.activeMobileMenu .siteWrapper,
+.activeMobileMenu .mobileMenu {
+    opacity: 1;
+    -ms-transform: translateX(200px);
+    -webkit-transform: translateX(200px);
+    -moz-transform: translateX(200px);
+    -o-transform: translateX(200px);
+    transform: translateX(200px);
+}
+
+.sliderWidgterWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner {
+    background-color: var(--color-blue-dark);
+    padding-bottom: 20px;
+}
+
+.bannerMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+.bannerMenuItem {
+    color: #fff;
+    margin-left: 25px;
+}
+
+.bannerMenuItem:first-child {
+    list-style-type: none;
+}
+
+.bannerMenuItemLink {
+    color: #fff;
+}
+
+.slider {
+    width: 65%;
+    height: 300px;
+    background-color: var(--color-grey-light);
+    border-radius: var(--border-radius-medium);
+}
+
+.widget {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 33%;
+    background-color: #fff;
+    border-radius: var(--border-radius-medium);
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.widgetItem {
+    border: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+.widgetItemTitle {
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.featuredItem {
+    padding: 50px 35px 30px;
+}
+
+.featuredItem,
+.featured2Item {
+    box-shadow: 0px 1px 2px 1px var(--color-grey-light);
+    border-radius: var(--border-radius-small);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.featuredItemTitle {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.featuredItemButton {
+    display: inline-block;
+    padding: 10px 83px;
+    text-transform: uppercase;
+    border-radius: var(--border-radius-small);
+    margin-top: 35px;
+}
+
+.description {
+    text-transform: none;
+}
+
+.featured,
+.featured2,
+.featured2Wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.featuredItem,
+.featured2Wrapper,
+.featured2Item  {
+    width: 48.5%;
+}
+
+.featured2Item {
+    padding: 15px;
+}
+
+.featured2ItemTitleLight {
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.featured2ItemImage {
+    background-color: #ddd;
+    width: 100%;
+    display: inline-block;
+    height: 100px;
+    margin-bottom: 20px;
+    border-radius: var(--border-radius-medium);
+}
+
+.feature2Button {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.featuredLink {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.newsletterContainer {
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.newsletterForm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newsletterFormTitle {
+    text-transform: none;
+    color: #ccc;
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+.newsletterFormInput {
+    background-color: #eee;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius-small);
+    padding: 7px 15px;
+    width: 25%;
+    font-size: 14px;
+    color: #ddd;
+    margin-right: 5px;
+}
+
+.newsletterFormSubmit {
+    border: 0;
+}
+
+.additionalInfo {
+    background-color: var(--color-blue);
+    border-bottom: 7px solid var(--color-blue-light);
+    padding: 20px 0;
+}
+
+.additionalInfoText {
+    color: #fff;
+}

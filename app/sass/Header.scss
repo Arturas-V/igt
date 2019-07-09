@@ -1,0 +1,81 @@
+.topHeader {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.mobileMenuToggle {
+    display: none;
+    top: 29px;
+    position: absolute;
+}
+
+.mobileMenuToggleText {
+    left: 40px;
+    position: absolute;
+    color: #fff;
+    top: -5px;
+}
+
+.mobileMenuToggleButton,
+.mobileMenuToggleButton:after,
+.mobileMenuToggleButton:before {
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    transition-timing-function: ease;
+    transition-duration: .15s;
+    transition-property: transform;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.mobileMenuToggleButton:after {
+    bottom: -10px;
+}
+
+.mobileMenuToggleButton:before {
+    top: -10px;
+}
+
+.mobileMenuToggleButton:after,
+.mobileMenuToggleButton:before {
+    display: block;
+    content: "";
+}
+
+.activeMobileMenu .mobileMenuToggleButton:after {
+    transform: translate3d(-5px,0,0) rotate(45deg) scaleX(.9)
+}
+
+.activeMobileMenu .mobileMenuToggleButton:before {
+    transform: translate3d(-4px,0,0) rotate(-45deg) scaleX(0.9)
+}
+
+.mobileMenuItem {
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--color-grey-dark);
+}
+
+.mobileMenuToggleText {
+
+}
+
+.topHeaderLogo {
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+.topHeaderLogoImage {
+    width: 200px;
+}
+
+.topHeaderMenuItem {
+    margin-left: 15px;
+    text-transform: none;
+}

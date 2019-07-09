@@ -1,0 +1,26 @@
+:before {
+    font-family: 'IcoFont' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-feature-settings: "liga";
+    -webkit-font-smoothing: antialiased;
+}
+
+.arrowButton:before { content: "\eaca"; }
+
+.arrowButton:before {
+    content: "\eaca";
+    position: absolute;
+    top: 8px;
+    right: 5px;
+    font-size: 20px;
+    font-weight: 900;
+}

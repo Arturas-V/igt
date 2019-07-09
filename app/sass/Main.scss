@@ -1,0 +1,110 @@
+:root {
+    --color-blue: #166ba7;
+    --color-blue-dark: #00347a;
+    --color-blue-dark2: #162840;
+    --color-blue-light: #00bedb;
+    --color-orange: #ed811e;
+    --color-grey-dark: #484848;
+    --color-grey: #818080;
+    --color-grey-light: #ccc;
+    --border-radius-small: 3px;
+    --border-radius-medium: 5px;
+    --border-radius-large: 7px;
+}
+
+@font-face {
+    font-family: "IcoFont";
+    font-weight: normal;
+    font-style: "Regular";
+    src: url("../fonts/icofont.woff2") format("woff2"),
+        url("../fonts/icofont.woff") format("woff");
+}
+
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p,
+a, img, form, footer, header, 
+menu, nav, section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    font-family: 'Nunito', sans-serif;
+	-webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    color: var(--color-grey-dark);
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+    margin: 0;
+    line-height: 1;
+}
+
+h1 {font-size: 28px;}
+h2 {font-size: 26px;}
+h3 {font-size: 24px;}
+h4 {font-size: 20px;}
+h5 {font-size: 16px;}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+img {
+	border: 0;
+}
+
+p {
+    line-height: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p, a, span {
+    font-size: 14px;
+}
+
+ul {
+    padding: 0px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="submit"] {
+    -webkit-appearance: none;
+}
+
+.container {
+    max-width: 1170px;
+    padding: 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.button {
+    padding: 10px 30px;
+    border-radius: var(--border-radius-small);
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 12px;
+}
+
+.buttonBlue {
+    background-color: var(--color-blue);
+}
+
+.buttonOrange {
+    background-color: var(--color-orange);
+    padding: 10px 50px;
+    display: inline-block;
+}

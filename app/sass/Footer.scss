@@ -1,0 +1,23 @@
+.footer {
+    background-color: #222;
+}
+
+.footerMenu {
+    margin: 0 0 40px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerMenuItem,
+.footerMenuItemLink,
+.footerText {
+    color: #fff;
+}
+
+.footerMenuItem {
+    list-style-type: none;
+}
+
+.footerText {
+    line-height: 26px;
+}
